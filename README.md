@@ -48,10 +48,10 @@ So! Now we've got to install a plugin.
 kubectl create -f https://github.com/flannel-io/flannel/releases/download/v0.24.3/kube-flannel.yml
 ```
 
-Now we can see that the nodes are ready:
+Now we can see that the nodes are ready (it might take a while, please be patient!):
 
 ```
-[fedora@knidevel-master cni-hero-hands-on]$ kubectl get nodes
+[fedora@knidevel-master cni-hero-hands-on]$ watch kubectl get nodes
 NAME                     STATUS   ROLES           AGE     VERSION
 cni-demo-control-plane   Ready    control-plane   7m32s   v1.27.3
 cni-demo-worker          Ready    <none>          7m13s   v1.27.3
